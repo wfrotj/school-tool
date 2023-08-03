@@ -5,4 +5,6 @@ const teacherRouter = express.Router();
 
 teacherRouter.post("/", teacherController.createTeacher);
 
+teacherRouter.get("/", teacherController.getAllTeachers);
+
 export default teacherRouter;
